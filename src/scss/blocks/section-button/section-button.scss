@@ -1,0 +1,51 @@
+.section-button {
+    display: flex;
+    gap: 16px;
+    border: none;
+    align-items: center;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bolder;
+
+    &:not(&_commercial):not(&_order)::before {
+        content: url('../img/button/icon.svg');    
+    }
+
+    @media (min-width: 768px) and (max-width: 1119px) {
+    }
+
+    @media (min-width: 1120px) {
+        gap: 16px;
+    }
+
+    &_commercial {
+        letter-spacing: -0.2;
+    }
+
+    &_commercial::after {
+        content: url('../img/button/dropdown.svg');
+        scale: 0.8;
+    }
+
+    &_order {
+        justify-content: center;
+        width: 119px;
+        height: 32px;
+        background: #FF3E79;
+        border-radius: 16px;
+        color: white;
+
+        &:hover {
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+
+        @media(max-width: 767px){
+            position: absolute;
+            right: 16px;
+            bottom: 64px;
+            z-index: 100;
+        }
+    }
+}
