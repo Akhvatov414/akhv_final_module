@@ -2,7 +2,6 @@
     display: flex;
     white-space: nowrap;
     padding-top: 16px;
-    padding-bottom: 50px;
     margin-left: 16px;
     max-height: 500px;
 
@@ -34,10 +33,20 @@
 
         @media (min-width: 768px) and (max-width: 1119px) {
             flex-wrap: wrap;
+            max-height: 160px;
+            transition: all 0.3s;
         }
+
         @media (min-width: 1120px) {
             flex-wrap: wrap;
             gap: 32px;
+            max-height: 180px;
+            transition: max-height 0.3s;
+        }
+
+        &_active {
+            max-height: 500px;
+            transition: max-height 0.3s;
         }
     }
 
