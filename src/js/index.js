@@ -46,15 +46,17 @@ let openChatWindow = () => {
 
 let showMoreBrand = () => {
     wrapperActiveBrand.classList.toggle('swiper__wrapper_active');
-    console.log(buttonCall);
+    brandButton.classList.toggle('section-button_active');
 }
 
 let showMoreType = () => {
     wrapperActiveTypes.classList.toggle('swiper__wrapper_active');
+    typesButton.classList.toggle('section-button_active');
 }
 
 let showMoreText = () => {
     wrapperText.classList.toggle('section__text-box_active');
+    textButton.classList.toggle('section-button_active');
 }
 
 buttonBurger.forEach(btn => {

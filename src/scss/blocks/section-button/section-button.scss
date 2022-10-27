@@ -8,7 +8,7 @@
     line-height: 24px;
     font-weight: bolder;
 
-    &:not(&_commercial):not(&_order)::before {
+    &:not(&_commercial):not(&_order):not(&_send):before {
         content: url('../img/button/icon.svg');    
     }
 
@@ -48,6 +48,32 @@
             bottom: 64px;
             z-index: 100;
         }
+        
+        &::after {
+            content: url('../img/button/send.svg');
+            scale: 0.8;
+        }
+    }
+
+    &_send {
+        justify-content: center;
+        position: relative;
+        width: 119px;
+        height: 32px;
+        background: #FF3E79;
+        border-radius: 16px;
+        color: white;
+        left: 170px;
+
+        &:hover {
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+        
+        &::after {
+            content: url('../img/button/send.svg');
+            scale: 0.8;
+        }
     }
 
     &_types {
@@ -69,6 +95,13 @@
         
         @media (min-width: 1120px) {
             display: flex;
+        }
+    }
+
+    &_active{
+        &::before{
+            transform: rotate(180deg);
+            transition: all 0.3 ease;
         }
     }
 }
