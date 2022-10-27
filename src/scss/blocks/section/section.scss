@@ -1,6 +1,8 @@
 .section {
     display: flex;
     flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
 
     @media (min-width: 768px) and (max-width: 1119px){
         flex-direction: row;
@@ -28,6 +30,7 @@
         overflow: hidden;
         margin: 24px 16px;
         margin-bottom: 16px;
+        transition: all 0.3s;
         flex-shrink: 0;
         gap: 16px;
         flex-direction: column;
@@ -44,6 +47,11 @@
             max-width: 490px;
             max-height: 160px;
         }
+
+        &_active {
+            max-height: 1000px;
+            transition: all 0.3s;
+        }
     }
 
     &__button{
@@ -53,6 +61,7 @@
     &__paragraph {
         font-size: 14px;
         line-height: 18px;
+        margin-left: 16px;
         letter-spacing: 0.2px;
 
         @media (min-width: 768px) and (max-width: 1119px) {
@@ -108,5 +117,6 @@
     &_column{
         flex-direction: column;
         gap: 16px;
+        min-width: 0;
     }
 }

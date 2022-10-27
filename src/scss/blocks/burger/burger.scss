@@ -1,6 +1,21 @@
 .burger {
     position: absolute;
-    display: none;
+    z-index: 101;
+    flex-direction: column;
+    width: 320px;
+    max-width: 320px;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+    gap: 32px;
+    transition: all 0.6s ease;
+    left: -100%;
+    top: 0px;
+    background: #FFFFFF;
+
+    @media (min-width: 768px) and (max-width: 1119px) {
+        box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+    }
 
     @media (min-width: 1440px){
         display: flex;
@@ -11,9 +26,10 @@
         position: fixed;
         padding: 20px;
         gap: 32px;
-        transition: transform 1s ease-in;
+        transition: all 0.2s ease;
         left: 0px;
         top: 0px;
+        z-index: 99;
         background: #FFFFFF;
     }
 
@@ -45,5 +61,9 @@
 
     &__lang-form {
         margin-top: 40px;
+    }
+
+    &_active {
+        left: 0;
     }
 }

@@ -15,5 +15,15 @@
         background: #FFFFFF;
         border: 1px solid #EAEAEA;
         border-radius: 8px;
-    }    
+
+        @media (min-width: 320px) and (max-width: 1119px){
+            width: 288px
+        }
+    }
+    
+    &__text{
+        @media (min-width: 320px) and (max-width: 1119px){
+            width: 288px
+        }
+    }
 }

@@ -16,11 +16,11 @@
         background-color: #FF3E79;
         width: 40px;
         height: 40px;
-        border-radius: 50%;
-
-        &:hover {
-            opacity: 0.6;
-            transition: 0.3s;
-        }
+        border-radius: 50%;        
+    }
+    
+    &:hover {
+        opacity: 0.6;
+        transition: 0.3s;
     }          
 }

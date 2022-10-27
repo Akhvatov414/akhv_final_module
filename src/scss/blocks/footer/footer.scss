@@ -14,11 +14,13 @@
     @media (min-width: 768px) and (max-width: 1119px) {
         flex-direction: row;
         justify-content: space-between;
+        padding: 0px 16px;
     }
 
     @media (min-width: 1120px){
         flex-direction: row;
         justify-content: space-between;
+        padding: 0px 16px;
     }
 
     &__text {

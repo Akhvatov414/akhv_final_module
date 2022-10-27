@@ -7,6 +7,7 @@
     max-width: 100%;
     margin-left: 8px;
     padding: 16px;
+    min-width: 0;
     // &__body{
     //     background-color: #FFFFFF;
     //     border-radius: 6px;
@@ -35,6 +36,7 @@
             flex-wrap: wrap;           
             position: relative;
             max-width: 260px;
+            min-width: 260px;
             max-height: 200px;
             margin-bottom: 30px;
         }
@@ -53,6 +55,7 @@
     }
 
     &__body {
+        padding-bottom: 50px;
 
         @media (min-width: 768px) and (max-width: 1119px) {
         }
@@ -75,10 +78,6 @@
             position: relative;
             width: 100%;
         }
-
-        @media (min-width: 768px) and (max-width: 1119px) {
-                        
-        } 
     }
 
     &__head {

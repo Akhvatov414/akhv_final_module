@@ -4,6 +4,8 @@
     gap: 16px;
 
     &__button:first-child {
+        display: flex;
+        justify-content: left;
         @media(min-width: 1440px){
             position: absolute;
             left: -64px;
@@ -11,8 +13,11 @@
     }
 
     &__button:last-child {
-        position: relative;
-        left: 279px;
+        
+        @media(min-width: 1440px){
+            position: relative;
+            left: 279px;
+        }    
     }
     
     &__title {
